@@ -1,6 +1,6 @@
 {
     "id": "cc-variable-charge-time",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "title": "Variable charge time",
     "description": "Adjust combat art timings",
     "repository": "https://github.com/krypciak/cc-variable-charge-time",
