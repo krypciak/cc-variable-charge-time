@@ -5,6 +5,7 @@ export const defaultChargeTimings: number[] = [0.25, 0.5, 1]
 declare global {
     namespace ig {
         var chargeTimings: number[]
+        var onChargeTimingsOptionChange: (() => void)[]
 
         function setChargeTimings(timings: number[]): void
     }
@@ -27,6 +28,7 @@ export function injectVariableChargeTime() {
         if (timings.length != 3) throw new Error(`Charge timings array has to be of length 3!`)
         ig.chargeTimings = timings
     }
+    ig.onChargeTimingsOptionChange = [() => ig.setChargeTimings(buildTimingArrayFromOptions())]
     ig.setChargeTimings(buildTimingArrayFromOptions())
 
     ig.ENTITY.Player.inject({
