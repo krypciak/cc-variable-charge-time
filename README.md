@@ -1,0 +1,16 @@
+<!-- markdownlint-disable MD013 MD024 MD001 MD045 -->
+
+# Example typescript CrossCode mod (compliation using esbuild)
+
+[![CCModManager badge](https://raw.githubusercontent.com/CCDirectLink/CCModManager/refs/heads/master/icon/badge.png)](https://github.com/CCDirectLink/CCModManager)
+
+## Building
+
+```bash
+git clone https://github.com/krypciak/cc-ts-template-esbuild
+cd cc-ts-template-esbuild
+pnpm install
+pnpm run start
+# this should return no errors (hopefully)
+pnpm tsc
+```
