@@ -2,6 +2,8 @@
 
 # Variable charge timings
 
+<img width="2272" height="1280" alt="image" src="https://github.com/user-attachments/assets/b87f3f32-3b4a-4ff7-a554-53d8c125bb2e" />
+
 ## Building
 
 ```bash
