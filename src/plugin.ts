@@ -1,6 +1,6 @@
-import { PluginClass } from 'ultimate-crosscode-typedefs/modloader/mod'
+import type { PluginClass } from 'ultimate-crosscode-typedefs/modloader/mod'
+import type { Mod1 } from './types'
 import ccmod from '../ccmod.json'
-import { Mod1 } from './types'
 import { registerOpts } from './options'
 import { injectVariableChargeTime } from './variable-charge-time'
 
