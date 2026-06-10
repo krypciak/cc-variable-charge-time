@@ -20,7 +20,7 @@ export function registerOpts() {
             return `${seconds.toFixed(2)} s`
         },
         changeEvent() {
-            for (const func of ig.onChargeTimingsOptionChange) func()
+            ig.setChargeTimings(buildTimingArrayFromOptions())
         },
     } as const satisfies Partial<Option>
 
