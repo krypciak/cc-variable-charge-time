@@ -55,7 +55,7 @@ export function injectVariableChargeTime() {
                         if (this.charging.maxLevel < 3) {
                             this.charging.time = origMin(
                                 this.charging.time,
-                                ig.chargeTimings[this.charging.maxLevel] - 0.05
+                                ig.chargeTimings[this.charging.maxLevel] - 1/61
                             )
                         }
 
